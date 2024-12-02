@@ -83,12 +83,12 @@ def calc_2(reports):
 
 
 if __name__ == "__main__":
-    l_input = parse_infile(Path(r"../input/input.txt"))
+    l_input = parse_infile(Path(__file__).parent / r"../input/input.txt")
 
-    # # Part one
+    # Part one
     result_1 = calc_1(l_input)
     print(f"Result part one: {result_1}")
-    #
+
     # Part two
     result_2 = calc_2(l_input)
     print(f"Result part two: {result_2}")

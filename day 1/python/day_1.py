@@ -35,7 +35,7 @@ def calc_2(list1, list2):
 
 
 if __name__ == "__main__":
-    l1, l2 = parse_infile(Path(r"../input/input.txt"))
+    l1, l2 = parse_infile(Path(__file__).parent / r"../input/input.txt")
 
     # Part one
     result_1 = calc_1(l1, l2)
