@@ -36,38 +36,6 @@ def calc_1(reports):
     return save_reports
 
 
-# Lösung kann erst Nummer nicht löschen, dann halt try and error
-def calc_2_wrong(reports):
-    save_reports = 0
-    for levels in reports:
-        first = check_pair(levels[0], levels[1])
-        last_value = levels[0]
-
-        if first is None:
-            i = 2
-            bad_levels = 1
-            first = check_pair(levels[0], levels[2])
-            if first is None:
-                continue
-        else:
-            i = 1
-            bad_levels = 0
-
-        while i < len(levels):
-            if check_pair(last_value, levels[i]) == first:
-                last_value = levels[i]
-                i += 1
-            else:
-                i += 2
-                bad_levels += 1
-
-            if bad_levels > 1:
-                break
-        if bad_levels < 2:
-            save_reports += 1
-    return save_reports
-
-
 # Mit der Brechstange, versuchsweise löschen
 def calc_2(reports):
     save_reports = 0
