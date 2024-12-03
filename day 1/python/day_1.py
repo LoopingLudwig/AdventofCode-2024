@@ -6,8 +6,6 @@ def parse_infile(path):
     RE_1 = re.compile(r"^\s*(\d+)\s+(\d+)\s*$", re.MULTILINE)
 
     with path.open() as f:
-        # spl = f.readline().split(" ")
-
         matches = RE_1.findall(f.read())
 
     l1, l2 = zip(*matches)
