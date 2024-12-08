@@ -1,7 +1,7 @@
 import re
 from pathlib import Path
 
-INPATH = Path(__file__).parent / r"../input/input.txt"
+INPATH = Path(__file__).parent / r"input.txt"
 
 
 def transpose_str(s_in):

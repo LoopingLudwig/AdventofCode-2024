@@ -51,7 +51,7 @@ def calc_2(reports):
 
 
 if __name__ == "__main__":
-    l_input = parse_infile(Path(__file__).parent / r"../input/input.txt")
+    l_input = parse_infile(Path(__file__).parent / r"input.txt")
 
     # Part one
     result_1 = calc_1(l_input)

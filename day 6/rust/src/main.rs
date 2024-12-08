@@ -1,7 +1,7 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader, Read};
 
-const INPATH: &str = "../input/input.txt";
+const INPATH: &str = "../input.txt";
 
 fn open_file() -> BufReader<File> {
     let infile = match File::open(INPATH) {

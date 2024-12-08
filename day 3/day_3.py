@@ -37,9 +37,9 @@ def calc_2(path):
 
 if __name__ == "__main__":
     # Part one
-    result_1 = calc_1(Path(__file__).parent / r"../input/input.txt")
+    result_1 = calc_1(Path(__file__).parent / r"input.txt")
     print(f"Result part one: {result_1}")
 
     # Part two
-    result_2 = calc_2(Path(__file__).parent / r"../input/input.txt")
+    result_2 = calc_2(Path(__file__).parent / r"input.txt")
     print(f"Result part two: {result_2}")
